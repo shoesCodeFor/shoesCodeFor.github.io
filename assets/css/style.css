@@ -1,0 +1,360 @@
+/**
+*   Basic CSS styling for Homework 1 - Portfolio
+*   Schuyler Ankele
+*   University of Denver Bootcamp 2018
+**/
+
+/*  Global CSS Variables 
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+*/
+:root{
+    /* Spec colors from HW */
+    --teal: #4aaaa5;
+    --reg-font-color: #777777;
+    --main-header: #fff;
+    --main-header-border:#ccc;
+    --footer-background:#666;
+    --main-content-background: #fff;
+    --main-content-border:#ddd;
+    /* Spec fonts for body */
+    --heading-font: 'Georgia', Times, Times New Roman, serif;
+    --regular-font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+    --light-blue: rgb(208, 238, 240);
+    --bone:rgb(254, 250, 227);
+    --deepBlue: rgba(43, 60, 60, 0.7);
+    --shadow:rgba(239, 242, 208, 0.4);
+}
+
+
+/*  Global Fonts */
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+body{
+    /* background-image: url('../images/nighttime.jpg');
+    background-attachment: fixed;*/
+    background-color: var(--main-content-background);
+    background-image: url('../images/tweed-opaque.png');
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.name{
+    position: relative;
+    margin-left: 5%;
+    margin-left: 5vw;
+    height: 75%;
+    max-height: 70px;
+    width: 30%;
+    width: 30vw;
+    color: var(--lightBlue);
+    background-color: var(--teal);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-size: 3.5vw;
+}
+.name h1{
+    padding-top: 3%;
+}
+.name:hover{
+    
+}
+nav{
+    height: 22vh;
+    max-height: 90px;
+    background-color: var(--main-header);
+    box-shadow: 3px 0px 8px black;
+
+}
+nav .links{
+    position: absolute;
+    top:25px;
+    top:2vh;
+    right: 5%;
+    right:5vw;
+}
+nav .links li{
+    display: inline;
+    margin-top: 2vh;
+    padding: 10px;
+    font-size: 1em;
+    font-size: 2vw;
+    transition: all .2s;
+}
+nav .links li:hover{
+    text-shadow: 3px 3px 7px var(--shadow);
+    
+}
+.links li a{
+    color: rgb(0, 0, 0);
+}
+.links li a:hover{
+    color: rgb(189, 189, 252);
+}
+.links li a:link{
+    text-decoration: none;
+}
+.brand{
+    position: relative;
+    top:1.4vh;
+}
+header{
+    
+}
+p{
+    position: relative;
+    text-align: left;
+    width: 80%;
+    margin-left: 7.5%;
+    padding: 20px;
+    font-size: 1.7vw;
+}
+.container{
+    width:100%;
+    text-align: center;
+}
+.main-content{
+    position: relative;
+    text-align: center;
+    margin-left: 7.5%;
+    width: 85%;
+    background-color: rgba(255,255,255,0.6);
+    padding-bottom: 100px;
+    
+}
+.main-content h2{
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    font-size: 2.5vw;
+    padding: 20px;
+    margin-top: 10px;
+}
+p img{
+    position: relative;
+    float: left;
+    padding-right: 15px;
+    width: 30%;
+    width: 30vw;
+}
+footer{
+    position: fixed;
+    text-align: center;
+    font-size: 2em;
+    font-size: 1.6vw;
+    height: 80px;
+    width: 100%;
+    bottom: 0px;
+    background-color: var(--footer-background);
+    border-top: 5px solid var(--teal);
+}
+footer h3{
+    margin-top: 25px;
+}
+/**
+*   Styles for Contact Page
+**/
+#contact{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15%;
+    letter-spacing: .2vw;
+    line-height: 1.2em;
+}
+#contact input{
+    width:50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#contact label{
+    font-size: 2em;
+}
+#contact button{
+    position: relative;
+    top:6vh;
+    font-size: 3vw;
+    background-color: rgba(18, 16, 99, 0.9);
+    border-radius: 15px;
+    color: white;
+    padding:6px;
+}
+
+.nameDiv{
+    position: relative;
+    justify-content: center;
+    padding:4%; 
+    top:5%;
+}
+
+#messageInput{
+    position: relative;
+    margin-left: 25%;
+    width: 50%;
+    padding-top: 10px;
+    text-align: left;
+}
+#messageInput label{
+    
+}
+#messageInput textarea{
+    width: 100%;
+}
+
+#messageInput textarea::spelling-error{
+    color: red;
+}
+#emailInput{
+    position: relative;
+    top: 3vh;
+}
+
+/**
+*   Portfolio Page Styles
+**/
+
+
+.projectContainer{
+  
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .project-item{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top:30px;
+    margin-bottom: 5%;
+    transition: all 1s ease;
+  }
+  .project-item:hover{
+    background-color:rgba(255,255,255,0.5);
+    box-shadow: 15px 15px 15px grey;
+  }
+  .project-title{
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color:rgb(174, 174, 174);
+  }
+  .project-desc{
+    text-align:center;
+    position:relative;
+    height: 100% - 26px;
+    opacity:0;
+    transition: all 1s ease;
+    background-color: rgba(255,255,255,1);
+  }
+  .project-desc:hover{
+    opacity:.9;
+  }
+  #busyBee{
+      background-image: url('../images/busyBee.jpg');
+      background-position-y: 40px;
+      background-repeat: no-repeat;
+  }
+  #akasa{
+    background-image: url('../images/akasa.jpg');
+    background-position-y: 60px;
+    background-repeat: no-repeat;
+}
+  #farmersMarket{
+    background-image: url('../images/farmersMarket.jpg');
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+}
+
+/**
+* Animations
+*
+*
+**/
+.active {
+    animation: pulse 5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { 
+        color: rgb(0, 0, 0);
+    }
+    50% {  
+        color: hsl(177, 59%, 36%);
+      }
+    75% {
+        color: hsl(177, 41%, 34%);
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+  }
+
+  /*  Responsive Content */
+@media only screen and (max-width: 600px) {
+    nav .links{
+        top:5%;
+    }
+    .fab{
+        display: none;
+    }
+
+}
+@media only screen and (max-height: 360px) {
+    nav{
+        height: 90px;
+    }
+}
+@media only screen and (min-height: 370px) {
+    .name{
+        height:76%;
+    }
+}
+@media only screen and (min-height: 380px) {
+    .name{
+        height:79%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    body {
+        position: absolute;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+
+    }
+    .main-content{
+        left:50% !important;
+        margin-left: -480px !important;
+        width: 960px;
+    }
+    
+}
