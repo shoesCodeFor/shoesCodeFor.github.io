@@ -1,61 +1,112 @@
 <!DOCTYPE html>
-<html class="no-js"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Schuyler Ankele - Full-Stack Developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        
-    </head>
-    <body>
-        <nav>
-            <div class="name">
-                <h1>Schuyler Ankele</h1>
-            </div>
-            <ul class="links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="brand">
-                    <a class="" href="https://github.com/shoesCodeFor"><i class="fab fa-github fa-2x"></i></a>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Schuyler Ankele - Personal Bio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+</head>
+<body>
+      <!-- Full Size Nav -->
+      <nav class="navbar navbar-expand-md d-none d-md-flex">
+        <div class="navbar-brand">
+          <div class="brand-left">
+            <b>Schuyler Ankele</b>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link internal active" href="#">About Me</a>
                 </li>
-                <li class="brand">
-                    <a class="" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link internal" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="brand">
-                    <a class="" href="https://www.linkedin.com/in/schuyler-ankele-33905373"><i class="fab fa-linkedin fa-2x"></i></a>
-                </li> 
+                <li class="nav-item">
+                    <a class="nav-link internal" href="contact.html">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/shoesCodeFor"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/schuylerhsr"><i class="fab fa-twitter fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/schuyler-ankele-33905373/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
             </ul>
-        </nav>
-        
-        <div class="container">
+        </div>
+      </nav>
+      <!-- Medium Nav -->
+      <nav class="navbar d-none d-sm-block d-block d-md-none text-center">
+          <div class="navbar-brand" id="sm-brand"><b>Schuyler Ankele</b><br> </div><br>
+          <div class="text-center" style="display: inline-block;">
+              <ul id="sm-nav" class="nav" style="">
+                  <li class="nav-item">
+                      <a class="nav-link internal active" href="#">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link internal" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link internal" href="contact.html">Links</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/shoesCodeFor"><i class="fab fa-github fa-2x"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://twitter.com/schuylerhsr"><i class="fab fa-twitter fa-2x"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.linkedin.com/in/schuyler-ankele-33905373/"><i class="fab fa-linkedin fa-2x"></i></a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <div id="aboutMe" class="container-fluid">
+        <div class="jumbotron">
             <div class='main-content'>
-                <header>
-                    <h2>About Me</h2>
+                <header class="row">
+                    <h2 class="col-md-12">About Me</h2>
                 </header>
                 <hr>
-                <article>
-                    <p>
-                        <img src="https://media.licdn.com/dms/image/C4E03AQGKBJ5hutF2HQ/profile-displayphoto-shrink_200_200/0?e=1528725600&v=beta&t=-S5kyHL3U3GKXU1L4gtqBqpBRs3UvQkzOrJ8wqI8Gn0">
-                        Hello, I'm Schuyler and I love all things related to computer programming.  Four years ago I began learning C and Java.  I began my path as a self-taught coder and quickly realized that nobody becomes better all on their own.  The landscape of modern software technology and information systems is daunting and I quickly realized I needed direction and mentorship.  It was at this time I enrolled in MSU Denver's Web Application Bachelor of Science program.
-                    </p>
-                    <p>   
-                        In my early years I started working as a freelance web-devloper specializing in simple Wordpress based sites.  While these early jobs helped me support myself throughout college.  As I reached the end of my journey at MSU Denver, I started working on full web-application proof of concepts and IoT projects.  I began programming with Arduino and Raspberry Pi, deploying LEMP/LAMP stack based projects and honed my skills as an Android developer.  
-                    </p>
-                    <p>         
-                        After graduation, I started working at MapQuest in Denver as an API Integration Support Engineer.  While I am thankful and content in my current employment role, I want to fully prepare myself for the next step in my career.  I try to stay current on emerging web technologies and it's impossible to deny the importance of server-side JS and front-end frameworks like React.  It was my gap in knowledge and my endless desire to know more that fueled my desire to sign up for the Coding Bootcamp at the University of Denver.  I am ecstatic to absorb as much as I can from this course and I look forward to the potential it will provide in my career.
-                    </p>
-                </article>
+                <div class="row">
+                    <div class="col-12">
+                        <img id="bio-picture" class="float-left img-fluid img-thumbnail" src="assets/images/profile.jpeg">
+                        <p>
+                            Hello, I'm Schuyler and I love all things related to computer programming.  Four years ago I began learning C and Java.  I began my path as a self-taught coder and quickly realized that nobody becomes better all on their own.  The landscape of modern software technology and information systems is daunting and I quickly realized I needed direction and mentorship.  It was at this time I enrolled in MSU Denver's Web Application Bachelor of Science program.
+                        </p>
+                        <p>
+                            In my early years I started working as a freelance web-devloper specializing in simple Wordpress based sites.  While these early jobs helped me support myself throughout college.  As I reached the end of my journey at MSU Denver, I started working on full web-application proof of concepts and IoT projects.  I began programming with Arduino and Raspberry Pi, deploying LEMP/LAMP stack based projects and honed my skills as an Android developer.
+                        </p>
+                        <p>
+                            After graduation, I started working at MapQuest in Denver as an API Integration Support Engineer.  While I am thankful and content in my current employment role, I want to fully prepare myself for the next step in my career.  I try to stay current on emerging web technologies and it's impossible to deny the importance of server-side JS and front-end frameworks like React.  It was my gap in knowledge and my endless desire to know more that fueled my desire to sign up for the Coding Bootcamp at the University of Denver.  I am ecstatic to absorb as much as I can from this course and I look forward to the potential it will provide in my career.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer>
-            <h3>Copyright &copy; 2018</h3>
-        </footer>
-    </body>
+      </div>  
+      </div> 
+      
+      
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+    </footer>
+    <nav class="navbar fixed-bottom text-center">
+        <a id="name-sake" class="mx-auto" href="#">Built By Schuyler Ankele<br><span id="year"></span></a>
+        
+    </nav>
+</body>
 </html>

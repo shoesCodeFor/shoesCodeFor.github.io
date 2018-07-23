@@ -1,87 +1,103 @@
 <!DOCTYPE html>
-<html class="no-js"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Schuyler Ankele - Full-Stack Developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="name">
-                    <h1>Schuyler Ankele</h1>
-                </div>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="brand">
-                        <a class="" href="https://github.com/shoesCodeFor"><i class="fab fa-github fa-2x"></i></a>
-                    </li>
-                    <li class="brand">
-                        <a class="" href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                    </li>
-                    <li class="brand">
-                        <a class="" href="https://www.linkedin.com/in/schuyler-ankele-33905373"><i class="fab fa-linkedin fa-2x"></i></a>
-                    </li> 
-                </ul>
-            </nav>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Schuyler Ankele - Personal Bio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+<!-- Full Size Nav -->
+<nav class="navbar navbar-expand-md d-none d-md-flex">
+    <div class="navbar-brand">
+        <div class="brand-left">
+            <b>Schuyler Ankele</b>
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarLinks">
+        <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item">
+                <a class="nav-link internal" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link internal active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link internal" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/shoesCodeFor"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/schuylerhsr"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/schuyler-ankele-33905373/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Medium Nav -->
+<nav class="navbar d-none d-sm-block d-block d-md-none text-center">
+    <div class="navbar-brand" id="sm-brand"><b>Schuyler Ankele</b><br> </div><br>
+    <div class="text-center" style="display: inline-block;">
+        <ul id="sm-nav" class="nav" style="">
+            <li class="nav-item">
+                <a class="nav-link internal active" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link internal" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link internal" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/shoesCodeFor"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/schuylerhsr"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/schuyler-ankele-33905373/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="contact" class="container-fluid">
+    <div class="jumbotron">
+        <header class="row">
+            <h2 class="col-md-12 text-center">Contact Information</h2>
         </header>
-        <div class="container">
-            <div class='main-content'>
-                <h2>Contact</h2>
-                <hr>
-                <section>
-                    <form id="contact">
-                        <div id="nameInputs">
-                            <div class="nameDiv">
-                                <label for="firstName">
-                                    First Name
-                                </label>
-                                <br>
-                                <input id="firstName" type="text">
-                            </div>
-                            <div class="nameDiv">
-                                <label for="lastName">
-                                    Last Name
-                                  </label>
-                                  <br>
-                                <input id="lastName" type="text">
-                            </div>
-                            
-                        </div>
-                        
-                        <br>
-                        <div id="messageInput">
-                            <label for="message">Message:</label><br>
-                            <textarea name="message" id="message" rows="10"></textarea>
-                        </div>
-                        <div id="emailInput">
-                            <label for="email">
-                                Email Address
-                            </label>
-                            <br>
-                            <input id="email" type="email">
-                        </div>
-                        <br>
-                        <button onclick="submit" class="submission">
-                            Submit
-                        </button>
-                    </form>
-                </section>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="contact" href="mailto:schuyler.ankele@gmail.com"><h3><i class="fas fa-envelope"></i> Email: Schuyler.Ankele@gmail.com</h3></a>
+            </div>
+            <div class="col-12 text-center">
+                <a class="contact" href="tel:3038983126"><h3><i class="fas fa-phone"></i> Tel: 303.898.3126</h3></a>
             </div>
         </div>
-        
-        <footer>
-            <h3>Copyright &copy; 2018 Schuyler Ankele</h3>
-        </footer>
-    </body>
+    </div>
+</div>
+
+
+<footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</footer>
+<nav class="navbar fixed-bottom text-center">
+    <a id="name-sake" class="mx-auto" href="#">Built By Schuyler Ankele<br><span id="year"></span></a>
+
+</nav>
+</body>
 </html>
+
