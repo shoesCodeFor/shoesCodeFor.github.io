@@ -158,6 +158,21 @@
   background-position-y: 40px;
   background-repeat: no-repeat;
 }
+#COTD{
+  background-image: url('../images/COTD.png');
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+}
+#ChooChooJS{
+  background-image: url('../images/ChooChoo.png');
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+}
+#StarWars{
+  background-image: url('../images/StarWars.png');
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+}
   #whyMe{
     margin-top: 10px;
   }
