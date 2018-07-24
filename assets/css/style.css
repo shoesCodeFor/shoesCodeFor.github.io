@@ -148,6 +148,10 @@
   background-position-y: 40px;
   background-repeat: no-repeat;
 }
+#busyBee:hover, #akasa:hover, #farmersMarket:hover, 
+#COTD:hover, #ChooChooJS:hover, #StarWars:hover{
+  background-color: rgba(255,255,255,0.5)
+}
 #akasa{
   background-image: url('../images/akasa.jpg');
   background-position-y: 60px;
