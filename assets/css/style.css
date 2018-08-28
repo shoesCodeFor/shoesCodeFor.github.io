@@ -69,7 +69,9 @@ body{
       100% {color: black;}
   }
   
-  
+  nav{
+    box-shadow: 3px 0px 8px black !important;
+  }
   
   .navbar-brand:after{
     content:'Full-Stack Dev';
@@ -185,6 +187,11 @@ body{
   background-position-y: 40px;
   background-repeat: no-repeat;
 }
+#Burritos{
+  background-image: url('../images/burritos.jpg');
+  background-position-y: 60px;
+  background-repeat: no-repeat;
+}
 #COTD{
   background-image: url('../images/COTD.png');
   background-position-y: 60px;
@@ -195,6 +202,7 @@ body{
   background-position-y: 60px;
   background-repeat: no-repeat;
 }
+
 #StarWars{
   background-image: url('../images/StarWars.jpg');
   background-position-y: 65px;
