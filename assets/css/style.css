@@ -202,7 +202,12 @@ body{
   background-position-y: 60px;
   background-repeat: no-repeat;
 }
-
+#locality{
+  background-image: url('../images/locality-app.jpg');
+  background-position-y: 20px;
+  background-position-x: -25px;
+  background-repeat: no-repeat;
+}
 #StarWars{
   background-image: url('../images/StarWars.jpg');
   background-position-y: 65px;
