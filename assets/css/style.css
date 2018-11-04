@@ -65,7 +65,7 @@
     font-size: 2.5vw;
   }
   #name-sake{
-    font-size: .8rem;
+    font-size: 1.6vw;
   }
 
   #navbarLinks{
@@ -77,6 +77,10 @@
     color: white !important;
   }
 
+  p{
+    font-size: 2.2vw !important;
+    padding-bottom: 10px;
+  }
 
 
   #aboutMe .jumbotron, #portfolio .jumbotron, #contact .jumbotron{
