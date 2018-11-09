@@ -1,37 +1,60 @@
+/****************************************
+* General CSS Styling for Portfolio Page
+*   By Schuyler Ankele - Summer 2018
+*****************************************/
+
+
+/************ Color Variables ***********/
+
+:root {
+  --offwhite: rgb(219, 246, 255);
+  --default-nav-bg: rgb(100,148,149);
+  --nav-frame1: rgb(75,100,117);
+  --nav-frame2: rgb(100,148,149);
+  --nav-frame3: rgb(138,132,100);
+  --nav-frame4: rgb(113,150,151);
+}
+
+
+
+
+
+
+/****************************************
+*         Global style elements
+*****************************************/
+
+
 *{
     font-family: 'Oswald', sans-serif;
   }
-  body{
-    background-image: url("https://hdwallsource.com/img/2014/9/simple-wallpaper-27241-27958-hd-wallpapers.jpg");
-    /*
-    background-attachment: fixed;
-    background-position: fill;
-    */
-    background-size:cover;
-  }
+body{
+  background-image: url("https://hdwallsource.com/img/2014/9/simple-wallpaper-27241-27958-hd-wallpapers.jpg");
+  background-size:cover;
+}
   
-  .navbar {
-      background-color: rgb(100,148,149);
-      -webkit-animation-name: color4; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
-      animation-name: color4;
-      animation-duration: 10s;
-  }
+.navbar {
+    background-color: var(--default-nav-bg);
+    -webkit-animation-name: color4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: color4;
+    animation-duration: 10s;
+}
   
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes color4 {
-      0%   {background-color: rgb(75,100,117);}
-      25%  {background-color: rgb(100,148,149);}
-      50%  {background-color: rgb(138,132,100);}
-      100% {background-color: rgb(113,150,151);}
+      0%   {background-color: var(--nav-frame1);}
+      25%  {background-color: var(--nav-frame2);}
+      50%  {background-color: var(--nav-frame3);}
+      100% {background-color: var(--nav-frame4);}
   }
   
   /* Standard syntax */
   @keyframes color4 {
-      0%   {background-color: rgb(75,100,117);}
-      25%  {background-color: rgb(100,148,149);}
-      50%  {background-color: rgb(138,132,100);}
-      100% {background-color: rgb(113,150,151);}
+    0%   {background-color: var(--nav-frame1);}
+    25%  {background-color: var(--nav-frame2);}
+    50%  {background-color: var(--nav-frame3);}
+    100% {background-color: var(--nav-frame4);}
   }
   
   /* Safari 4.0 - 8.0 */
@@ -46,7 +69,9 @@
       100% {color: black;}
   }
   
-  
+  nav{
+    box-shadow: 3px 0px 8px black !important;
+  }
   
   .navbar-brand:after{
     content:'Full-Stack Dev';
@@ -58,14 +83,14 @@
   
   .nav a, .brand-left b, #name-sake, #sm-brand{
     font-size: 1.5rem;
-    color: white;
+    color: var(--offwhite);
     text-shadow: 3px 3px 8px black;
   }
   #sm-nav .nav-item .nav-link{
     font-size: 2.5vw;
   }
   #name-sake{
-    font-size: 1.6vw;
+    font-size: 1rem;
   }
 
   #navbarLinks{
@@ -77,10 +102,6 @@
     color: white !important;
   }
 
-  p{
-    font-size: 2.2vw !important;
-    padding-bottom: 10px;
-  }
 
 
   #aboutMe .jumbotron, #portfolio .jumbotron, #contact .jumbotron{
@@ -98,10 +119,11 @@
     margin-top: 5px;
   }
 
-
+/********************************************
+*   Flexbox elements for Project Portfolio
+*********************************************/
 
 .projectContainer{
-
   padding: 0;
   margin: 0;
   list-style: none;
@@ -110,7 +132,6 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display:flex;
-
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -134,23 +155,27 @@
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  background-color:rgb(174, 174, 174);
+  background-color:rgb(213, 228, 255);
 }
 .project-desc{
   text-align:center;
   position:relative;
-  height: 100% - 26px;
+  height: 150px;
   opacity:0;
   transition: all 1s ease;
   background-color: rgba(255,255,255,1);
 }
 .project-desc:hover{
-  opacity:.9;
+  opacity:.8;
 }
 #busyBee{
   background-image: url('../images/busyBee.jpg');
   background-position-y: 40px;
   background-repeat: no-repeat;
+}
+#busyBee:hover, #akasa:hover, #farmersMarket:hover,
+#COTD:hover, #ChooChooJS:hover, #StarWars:hover{
+  background-color: rgba(255,255,255,0.5)
 }
 #akasa{
   background-image: url('../images/akasa.jpg');
@@ -160,6 +185,32 @@
 #farmersMarket{
   background-image: url('../images/farmersMarket.jpg');
   background-position-y: 40px;
+  background-repeat: no-repeat;
+}
+#Burritos{
+  background-image: url('../images/burritos.jpg');
+  background-position-y: 60px;
+  background-repeat: no-repeat;
+}
+#COTD{
+  background-image: url('../images/COTD.png');
+  background-position-y: 60px;
+  background-repeat: no-repeat;
+}
+#ChooChooJS{
+  background-image: url('../images/ChooChooJS.jpg');
+  background-position-y: 60px;
+  background-repeat: no-repeat;
+}
+#locality{
+  background-image: url('../images/locality-app.jpg');
+  background-position-y: 20px;
+  background-position-x: -25px;
+  background-repeat: no-repeat;
+}
+#StarWars{
+  background-image: url('../images/StarWars.jpg');
+  background-position-y: 65px;
   background-repeat: no-repeat;
 }
   #whyMe{
